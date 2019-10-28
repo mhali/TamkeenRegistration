@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4B43153-B5D4-4902-9CB5-C8A5DCC604CE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TamkeenRegistration</RootNamespace>
+    <AssemblyName>TamkeenRegistration</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="agenda footer.png" />
+    <Content Include="agenda master header.png" />
+    <Content Include="boy.png" />
+    <Content Include="Budget\Budget.aspx" />
+    <Content Include="Budget\BudgetDashboard.aspx" />
+    <Content Include="Budget\ManageEvents.aspx" />
+    <Content Include="Budget\UnarchiveEvents.aspx" />
+    <Content Include="ClockThumbnail.png" />
+    <Content Include="CreateUser\CreateUser.aspx" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="girl.png" />
+    <Content Include="Homepage\DefaultSubframe.aspx" />
+    <Content Include="Homepage\OpenYourHeart.aspx" />
+    <Content Include="Homepage\PastQuizzes.aspx" />
+    <Content Include="Homepage\Quiz.aspx" />
+    <Content Include="Homepage\QuizAnswers.aspx" />
+    <Content Include="Homepage\Tamkeen_files\bootstrap.js" />
+    <Content Include="Homepage\Tamkeen_files\bootstrap.min.js" />
+    <Content Include="Homepage\Tamkeen_files\freelancer.js" />
+    <Content Include="Homepage\Tamkeen_files\freelancer.min.js" />
+    <Content Include="Homepage\Tamkeen_files\jqBootstrapValidation.js" />
+    <Content Include="Homepage\Tamkeen_files\jquery-ui.js" />
+    <Content Include="Homepage\Tamkeen_files\jquery-ui.min.js" />
+    <Content Include="Homepage\Tamkeen_files\jquery.cycle2.min.js" />
+    <Content Include="Homepage\Tamkeen_files\jquery.formset.js" />
+    <Content Include="Homepage\Tamkeen_files\jquery.js" />
+    <Content Include="Homepage\Tamkeen_files\jquery.min.js" />
+    <Content Include="Homepage\Tamkeen_files\main.js" />
+    <Content Include="Homepage\Videos.aspx" />
+    <Content Include="Homepage\Tamkeen.aspx" />
+    <Content Include="Homepage\Tamkeen.html" />
+    <Content Include="Homepage\Tamkeen_files\animate.css" />
+    <Content Include="Homepage\Tamkeen_files\bg.jpg" />
+    <Content Include="Homepage\Tamkeen_files\bg1.jpg" />
+    <Content Include="Homepage\Tamkeen_files\bg5.jpg" />
+    <Content Include="Homepage\Tamkeen_files\body.png" />
+    <Content Include="Homepage\Tamkeen_files\bootstrap.min%281%29.css" />
+    <Content Include="Homepage\Tamkeen_files\bootstrap.min.css" />
+    <Content Include="Homepage\Tamkeen_files\brain.png" />
+    <Content Include="Homepage\Tamkeen_files\font-awesome.min.css" />
+    <Content Include="Homepage\Tamkeen_files\football.jpg" />
+    <Content Include="Homepage\Tamkeen_files\fun.png" />
+    <Content Include="Homepage\Tamkeen_files\heart.png" />
+    <Content Include="Homepage\Tamkeen_files\image-list-basic.css" />
+    <Content Include="Homepage\Tamkeen_files\khalidibnwaleedpichalaqa.jpg" />
+    <Content Include="Homepage\Tamkeen_files\learning-logo.png" />
+    <Content Include="Homepage\Tamkeen_files\logo.png" />
+    <Content Include="Homepage\Tamkeen_files\openyourheart.png" />
+    <Content Include="Homepage\Tamkeen_files\organization.png" />
+    <Content Include="Homepage\Tamkeen_files\paypal-donate-button1.png" />
+    <Content Include="Homepage\Tamkeen_files\pixel.gif" />
+    <Content Include="Homepage\Tamkeen_files\product-list-basic.css" />
+    <Content Include="Homepage\Tamkeen_files\product-list-vertical.css" />
+    <Content Include="Homepage\Tamkeen_files\question.css" />
+    <Content Include="Homepage\Tamkeen_files\sddefault.jpg" />
+    <Content Include="Homepage\Tamkeen_files\styles.css" />
+    <Content Include="Homepage\Tamkeen_files\tamkeen-battleofyarmookpichalaqa.jpg" />
+    <Content Include="Homepage\Tamkeen_files\tamkeenGroupLunch.jpeg" />
+    <Content Include="Homepage\Tamkeen_files\team.png" />
+    <Content Include="Homepage\Tamkeen_files\videos.css" />
+    <Content Include="Homepage\Tamkeen_files\ymca.png" />
+    <Content Include="Homepage\ViewAllQuizzes.aspx" />
+    <Content Include="LocationThumbnail.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="logo no text.png" />
+    <Content Include="logo.png" />
+    <Content Include="ParentPortal\Registration.aspx" />
+    <Content Include="QuoteBackground.jpg" />
+    <Content Include="quotes.png" />
+    <Content Include="Registration\AddDriver.aspx" />
+    <Content Include="Registration\Attendance.aspx" />
+    <Content Include="Registration\Badges.aspx" />
+    <Content Include="Registration\Registration.aspx" />
+    <Content Include="Registration\RegistrationDashboard.aspx" />
+    <Content Include="Registration\TamkeenerAttendance.aspx" />
+    <Content Include="Registration\TamkeenerUnarchive.aspx" />
+    <Content Include="ParentPortal\TamkeenWaiverFormViewer.aspx" />
+    <Content Include="ribbon.png" />
+    <Content Include="Ring.png" />
+    <Content Include="SocialMedia\AddQuiz.aspx" />
+    <Content Include="SocialMedia\AddQuote.aspx" />
+    <Content Include="SocialMedia\AddVideo.aspx" />
+    <Content Include="SocialMedia\Agenda.aspx" />
+    <Content Include="SocialMedia\Award.aspx" />
+    <Content Include="SocialMedia\EventSummaries.aspx" />
+    <Content Include="SocialMedia\SocialMediaDashboard.aspx" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TamkeenAward.png" />
+    <Content Include="TamkeenerPortal\AnswerQuiz.aspx" />
+    <Content Include="TaskManagement\MySelfCheck.aspx" />
+    <Content Include="TaskManagement\MyWIs.aspx" />
+    <Content Include="TaskManagement\TaskManagement.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Budget\Budget.aspx.cs">
+      <DependentUpon>Budget.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Budget\Budget.aspx.designer.cs">
+      <DependentUpon>Budget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Budget\BudgetDashboard.aspx.cs">
+      <DependentUpon>BudgetDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Budget\BudgetDashboard.aspx.designer.cs">
+      <DependentUpon>BudgetDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Budget\ManageEvents.aspx.cs">
+      <DependentUpon>ManageEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Budget\ManageEvents.aspx.designer.cs">
+      <DependentUpon>ManageEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Budget\UnarchiveEvents.aspx.cs">
+      <DependentUpon>UnarchiveEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Budget\UnarchiveEvents.aspx.designer.cs">
+      <DependentUpon>UnarchiveEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUser\CreateUser.aspx.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateUser\CreateUser.aspx.designer.cs">
+      <DependentUpon>CreateUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage\DefaultSubframe.aspx.cs">
+      <DependentUpon>DefaultSubframe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage\DefaultSubframe.aspx.designer.cs">
+      <DependentUpon>DefaultSubframe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage\OpenYourHeart.aspx.cs">
+      <DependentUpon>OpenYourHeart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage\OpenYourHeart.aspx.designer.cs">
+      <DependentUpon>OpenYourHeart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage\PastQuizzes.aspx.cs">
+      <DependentUpon>PastQuizzes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage\PastQuizzes.aspx.designer.cs">
+      <DependentUpon>PastQuizzes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage\Quiz.aspx.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage\Quiz.aspx.designer.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage\QuizAnswers.aspx.cs">
+      <DependentUpon>QuizAnswers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage\QuizAnswers.aspx.designer.cs">
+      <DependentUpon>QuizAnswers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage\Videos.aspx.cs">
+      <DependentUpon>Videos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage\Videos.aspx.designer.cs">
+      <DependentUpon>Videos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage\Tamkeen.aspx.cs">
+      <DependentUpon>Tamkeen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage\Tamkeen.aspx.designer.cs">
+      <DependentUpon>Tamkeen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage\ViewAllQuizzes.aspx.cs">
+      <DependentUpon>ViewAllQuizzes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage\ViewAllQuizzes.aspx.designer.cs">
+      <DependentUpon>ViewAllQuizzes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ParentPortal\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParentPortal\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\AddDriver.aspx.cs">
+      <DependentUpon>AddDriver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\AddDriver.aspx.designer.cs">
+      <DependentUpon>AddDriver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\Attendance.aspx.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\Attendance.aspx.designer.cs">
+      <DependentUpon>Attendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\Badges.aspx.cs">
+      <DependentUpon>Badges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\Badges.aspx.designer.cs">
+      <DependentUpon>Badges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ParentPortal\DataSetWaiverForm.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetWaiverForm.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration\RegistrationDashboard.aspx.cs">
+      <DependentUpon>RegistrationDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\RegistrationDashboard.aspx.designer.cs">
+      <DependentUpon>RegistrationDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\TamkeenerAttendance.aspx.cs">
+      <DependentUpon>TamkeenerAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\TamkeenerAttendance.aspx.designer.cs">
+      <DependentUpon>TamkeenerAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\TamkeenerUnarchive.aspx.cs">
+      <DependentUpon>TamkeenerUnarchive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\TamkeenerUnarchive.aspx.designer.cs">
+      <DependentUpon>TamkeenerUnarchive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ParentPortal\TamkeenWaiverFormViewer.aspx.cs">
+      <DependentUpon>TamkeenWaiverFormViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParentPortal\TamkeenWaiverFormViewer.aspx.designer.cs">
+      <DependentUpon>TamkeenWaiverFormViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SocialMedia\AddQuiz.aspx.cs">
+      <DependentUpon>AddQuiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SocialMedia\AddQuiz.aspx.designer.cs">
+      <DependentUpon>AddQuiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SocialMedia\AddQuote.aspx.cs">
+      <DependentUpon>AddQuote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SocialMedia\AddQuote.aspx.designer.cs">
+      <DependentUpon>AddQuote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SocialMedia\AddVideo.aspx.cs">
+      <DependentUpon>AddVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SocialMedia\AddVideo.aspx.designer.cs">
+      <DependentUpon>AddVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SocialMedia\Agenda.aspx.cs">
+      <DependentUpon>Agenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SocialMedia\Agenda.aspx.designer.cs">
+      <DependentUpon>Agenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SocialMedia\Award.aspx.cs">
+      <DependentUpon>Award.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SocialMedia\Award.aspx.designer.cs">
+      <DependentUpon>Award.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SocialMedia\EventSummaries.aspx.cs">
+      <DependentUpon>EventSummaries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SocialMedia\EventSummaries.aspx.designer.cs">
+      <DependentUpon>EventSummaries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SocialMedia\SocialMediaDashboard.aspx.cs">
+      <DependentUpon>SocialMediaDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SocialMedia\SocialMediaDashboard.aspx.designer.cs">
+      <DependentUpon>SocialMediaDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="TamkeenerPortal\AnswerQuiz.aspx.cs">
+      <DependentUpon>AnswerQuiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TamkeenerPortal\AnswerQuiz.aspx.designer.cs">
+      <DependentUpon>AnswerQuiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TaskManagement\MySelfCheck.aspx.cs">
+      <DependentUpon>MySelfCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TaskManagement\MySelfCheck.aspx.designer.cs">
+      <DependentUpon>MySelfCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TaskManagement\MyWIs.aspx.cs">
+      <DependentUpon>MyWIs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TaskManagement\MyWIs.aspx.designer.cs">
+      <DependentUpon>MyWIs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TaskManagement\TaskManagement.aspx.cs">
+      <DependentUpon>TaskManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TaskManagement\TaskManagement.aspx.designer.cs">
+      <DependentUpon>TaskManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="ParentPortal\DataSetWaiverForm.xsc">
+      <DependentUpon>DataSetWaiverForm.xsd</DependentUpon>
+    </Content>
+    <Content Include="CreateUser\Web.config" />
+    <Content Include="Homepage\Tamkeen_files\jqBootstrapValidation.js.download" />
+    <Content Include="Homepage\Tamkeen_files\jquery.easing.min.js.download" />
+    <Content Include="Homepage\Tamkeen_files\jquery.min.js.download" />
+    <Content Include="Homepage\Tamkeen_files\main.js.download" />
+    <Content Include="Homepage\Web.config" />
+    <Content Include="Homepage\Tamkeen_files\.DS_Store" />
+    <None Include="ParentPortal\DataSetWaiverForm.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetWaiverForm.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="ParentPortal\DataSetWaiverForm.xss">
+      <DependentUpon>DataSetWaiverForm.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\DeployTamkeenRegistration.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ParentPortal\ScoutingForm.rdlc" />
+    <EmbeddedResource Include="ParentPortal\UWWaiver.rdlc" />
+    <EmbeddedResource Include="ParentPortal\TamkeenWaivers.rdlc" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53736</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53736/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
